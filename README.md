@@ -8,13 +8,10 @@
 - `git clone git@github.com:Ваш_аккаунт/<Имя проекта>.git`
 
 ### ТЗ
-```
 ![image](https://github.com/denchur/delivery-of-medicines-API/tz1.png)
 
-```
-```
 ![image](https://github.com/denchur/delivery-of-medicines-API/main/tz2.png)
-```
+
 ### Для запуска перейдите в директорию с файлом manage.py
 ```
 python -m venv venv
