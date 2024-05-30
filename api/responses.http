@@ -1,0 +1,109 @@
+
+@Auth_Token = 3f832e85e0683bdc4820fe1f79e68058fdc3ddcf
+####
+post  http://127.0.0.1:8000/api/orders/10/refuce_order/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+###
+###
+post  http://127.0.0.1:8000/api/orders/1/give_to_the_recipient/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+
+{
+  "acceptCode": 2222
+}
+
+
+####
+post  http://127.0.0.1:8000/api/orders/1/pickup_pharmacy/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+####
+get  http://127.0.0.1:8000/api/orders/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+###
+
+get  http://127.0.0.1:8000/api/users/me/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+###
+get  http://127.0.0.1:8000/api/orders/my_orders/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+###
+post  http://127.0.0.1:8000/api/auth/token/login
+### 
+get http://127.0.0.1:8000/api/users/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+
+###
+post  http://127.0.0.1:8000/api/users/
+Content-type: application/json; charset=utf-8
+
+{
+  "email": "testemail@example.com",
+  "username": "testusername",
+  "password": "TestPass22@",
+  "first_name": "testname",
+  "last_name": "testlastname",
+  "mobile_phone": "12345678911"
+}
+###
+
+post  http://127.0.0.1:8000/api/orders/35/pickup_pharmacy/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+###
+post  http://127.0.0.1:8000/api/orders/22/take_order/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+###
+post http://127.0.0.1:8000/api/users/
+###
+post  http://127.0.0.1:8000/api/orders/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+
+{
+  "from_the_pharmacy": 1,
+  "address_pacient": "123 Main St",
+  "recipients_name": "JohnDoe",
+  "recipients_snils": "77777777777",
+  "recipients_phone": "77777777777",
+  "medication": [
+    {
+      "name": "Аспирин 200мг",
+      "quantity": 2
+    },
+    {
+      "name": "Ибупрофен 50мг",
+      "quantity": 5
+    }
+  ]
+}
+
+
+###
+get  http://127.0.0.1:8000/api/orders/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+
+
+###
+post  http://127.0.0.1:8000/api/orders/38/refuce_order/
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+
+
+###
+post http://127.0.0.1:8000/api/orders/
+
+Content-type: application/json; charset=utf-8
+Authorization: Token {{Auth_Token}}
+
+{
+
+}
