@@ -9,11 +9,11 @@
 
 ### ТЗ
 ```
-![image](https://github.com/denchur/delivery-of-medicines-API/assets/122829370/097cfb87-3f84-4f96-a97e-1e852adce388)
+![image](https://github.com/denchur/delivery-of-medicines-API/tz1.png)
 
 ```
 ```
-![image](https://github.com/denchur/delivery-of-medicines-API/assets/122829370/06f5cd75-8ba5-4c01-ac87-eb25a059d2bb)
+![image](https://github.com/denchur/delivery-of-medicines-API/main/tz2.png)
 ```
 ### Для запуска перейдите в директорию с файлом manage.py
 ```
